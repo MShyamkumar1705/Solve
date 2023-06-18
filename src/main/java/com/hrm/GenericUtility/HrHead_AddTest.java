@@ -18,7 +18,7 @@ public class HrHead_AddTest {
 		
 		
         WebDriver driver=new ChromeDriver();
-        ReadExcelDataUtility rLib=new ReadExcelDataUtility();
+        ExcelUtility rLib=new ExcelUtility();
         WebDriverUtility wLib=new WebDriverUtility();
         JavaUtility jLib=new JavaUtility();
         HashMap<String, String> fields=new HashMap<String, String>();

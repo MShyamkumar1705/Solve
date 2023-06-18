@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HrHead_Module.HrHeadAddEmpUsingTestNg">
+      <class name="com.hrm.GenericUtility.URLtest">
         <methods>
-          <include name="loginAsHead"/>
-          <include name="openBrowser"/>
-          <include name="logOutAsHead"/>
-          <include name="createEmployee"/>
-          <include name="closeBrowser"/>
-          <include name="disconnectFromDB"/>
-          <include name="connectToDB"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- HrHead_Module.HrHeadAddEmpUsingTestNg -->
+      </class> <!-- com.hrm.GenericUtility.URLtest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

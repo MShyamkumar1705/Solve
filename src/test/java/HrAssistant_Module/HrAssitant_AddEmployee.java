@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.hrm.GenericUtility.JavaUtility;
 import com.hrm.GenericUtility.PropertyDataUtility;
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.WebDriverUtility;
 import com.hrm.GenericUtility.iPathContent;
 
@@ -20,7 +20,7 @@ public class HrAssitant_AddEmployee {
 WebDriver driver;
 		JavaUtility jLib=new JavaUtility();
 		PropertyDataUtility pLib=new PropertyDataUtility();
-		ReadExcelDataUtility eLib=new ReadExcelDataUtility();
+		ExcelUtility eLib=new ExcelUtility();
 		WebDriverUtility wLib=new WebDriverUtility();
 		
 		//Step 1:Get common Data

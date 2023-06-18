@@ -2,45 +2,32 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[createEmployee-----> Testscript execution started]]>
-    </line>
-    <line>
-      <![CDATA[--TestScript Execution failed--]]>
+      <![CDATA[Test1 - class11]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-01-13T10:12:19 IST" name="Default suite" finished-at="2023-01-13T10:14:17 IST" duration-ms="117823">
+  <suite started-at="2023-01-25T17:22:35 IST" name="Default suite" finished-at="2023-01-25T17:22:54 IST" duration-ms="18567">
     <groups>
-      <group name="regression">
-        <method signature="HrHeadAddEmpUsingTestNg.createEmployee()[pri:0, instance:HrHead_Module.HrHeadAddEmpUsingTestNg@7334aada]" name="createEmployee" class="HrHead_Module.HrHeadAddEmpUsingTestNg"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="HrHeadAddEmpUsingTestNg.createEmployee()[pri:0, instance:HrHead_Module.HrHeadAddEmpUsingTestNg@7334aada]" name="createEmployee" class="HrHead_Module.HrHeadAddEmpUsingTestNg"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-01-13T10:12:19 IST" name="Default test" finished-at="2023-01-13T10:14:17 IST" duration-ms="117823">
-      <class name="HrHead_Module.HrHeadAddEmpUsingTestNg">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:HrHead_Module.HrHeadAddEmpUsingTestNg@7334aada]" started-at="2023-01-13T10:12:19 IST" name="connectToDB" finished-at="2023-01-13T10:12:19 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:HrHead_Module.HrHeadAddEmpUsingTestNg@7334aada]" started-at="2023-01-13T10:12:20 IST" name="openBrowser" finished-at="2023-01-13T10:12:23 IST" duration-ms="3933" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="loginAsHead()[pri:0, instance:HrHead_Module.HrHeadAddEmpUsingTestNg@7334aada]" started-at="2023-01-13T10:12:23 IST" name="loginAsHead" finished-at="2023-01-13T10:12:24 IST" duration-ms="624" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAsHead -->
-        <test-method signature="createEmployee()[pri:0, instance:HrHead_Module.HrHeadAddEmpUsingTestNg@7334aada]" started-at="2023-01-13T10:12:24 IST" name="createEmployee" finished-at="2023-01-13T10:14:17 IST" duration-ms="112667" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2023-01-25T17:22:35 IST" name="Default test" finished-at="2023-01-25T17:22:54 IST" duration-ms="18567">
+      <class name="com.hrm.GenericUtility.URLtest">
+        <test-method signature="test()[pri:0, instance:com.hrm.GenericUtility.URLtest@21de60b4]" started-at="2023-01-25T17:22:35 IST" name="test" finished-at="2023-01-25T17:22:54 IST" duration-ms="18484" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-OUI7JLC', ip: '127.0.0.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at HrHead_Module.HrHeadAddEmpUsingTestNg.createEmployee(HrHeadAddEmpUsingTestNg.java:18)
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-OUI7JLC', ip: '127.0.0.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at com.hrm.GenericUtility.URLtest.test(URLtest.java:22)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -67,31 +54,48 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketException: Software caused connection abort: no further information
+at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:633)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+... 30 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
             <line>
-              <![CDATA[createEmployee-----> Testscript execution started]]>
-            </line>
-            <line>
-              <![CDATA[--TestScript Execution failed--]]>
+              <![CDATA[Test1 - class11]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createEmployee -->
-        <test-method is-config="true" signature="logOutAsHead()[pri:0, instance:HrHead_Module.HrHeadAddEmpUsingTestNg@7334aada]" started-at="2023-01-13T10:14:17 IST" name="logOutAsHead" finished-at="2023-01-13T10:14:17 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOutAsHead -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:HrHead_Module.HrHeadAddEmpUsingTestNg@7334aada]" started-at="2023-01-13T10:14:17 IST" name="closeBrowser" finished-at="2023-01-13T10:14:17 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="disconnectFromDB()[pri:0, instance:HrHead_Module.HrHeadAddEmpUsingTestNg@7334aada]" started-at="2023-01-13T10:14:17 IST" name="disconnectFromDB" finished-at="2023-01-13T10:14:17 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- disconnectFromDB -->
-      </class> <!-- HrHead_Module.HrHeadAddEmpUsingTestNg -->
+        </test-method> <!-- test -->
+      </class> <!-- com.hrm.GenericUtility.URLtest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

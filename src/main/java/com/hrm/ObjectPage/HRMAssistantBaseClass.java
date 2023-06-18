@@ -15,14 +15,14 @@ import com.hrm.GenericUtility.DataBaseUtility;
 import com.hrm.GenericUtility.FileUtility;
 import com.hrm.GenericUtility.JavaUtility;
 import com.hrm.GenericUtility.PropertyDataUtility;
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.WebDriverUtility;
 
 public class HRMAssistantBaseClass {
 	public WebDriver driver;
 	public WebDriverUtility wLib=new WebDriverUtility();
 	public JavaUtility jLib=new JavaUtility();
-	public ReadExcelDataUtility rLib=new ReadExcelDataUtility();
+	public ExcelUtility rLib=new ExcelUtility();
 	public PropertyDataUtility pLib=new PropertyDataUtility();
 	public DataBaseUtility dLib=new DataBaseUtility();
 	public FileUtility fLib=new FileUtility();

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.WebDriverUtility;
 
 public class AddHrHeadBranchPage {
@@ -34,7 +34,7 @@ public class AddHrHeadBranchPage {
 	public WebElement getSaveBranch() {
 		return saveBranch;
 	}
-public void AddBranch(WebDriverUtility wLib,ReadExcelDataUtility rLib,WebDriver driver) throws Throwable, Throwable {
+public void AddBranch(WebDriverUtility wLib,ExcelUtility rLib,WebDriver driver) throws Throwable, Throwable {
 	addBranch.click();
 	branchName.sendKeys(rLib.readExcelData("book", 1, 7));
 	saveBranch.click();

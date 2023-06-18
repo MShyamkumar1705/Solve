@@ -1,3 +1,4 @@
+
 package com.hrm.GenericUtility;
 
 import org.openqa.selenium.WebDriver;
@@ -20,7 +21,7 @@ public class HRMHeadBaseClass {
 	public WebDriver driver;
 	public WebDriverUtility wLib=new WebDriverUtility();
 	public JavaUtility jLib=new JavaUtility();
-	public ReadExcelDataUtility rLib=new ReadExcelDataUtility();
+	public ExcelUtility rLib=new ExcelUtility();
 	public PropertyDataUtility pLib=new PropertyDataUtility();
 	public DataBaseUtility dLib=new DataBaseUtility();
 	public FileUtility fLib=new FileUtility();
@@ -60,7 +61,7 @@ public class HRMHeadBaseClass {
 	public void loginAsHead() {
 	
 		LoginPage lp=new LoginPage(driver);
-		lp.HRHeadLogin(wLib, driver);
+		lp.HRHeadLogin(wLib, driver); 
 		
 			
 		}

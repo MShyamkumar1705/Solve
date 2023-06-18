@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.hrm.GenericUtility.JavaUtility;
 import com.hrm.GenericUtility.PropertyDataUtility;
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.WebDriverUtility;
 
 public class Hr_Assistant_DeleteEmployee {
@@ -20,7 +20,7 @@ public class Hr_Assistant_DeleteEmployee {
 		WebDriver driver;
 		JavaUtility jLib=new JavaUtility();
 		PropertyDataUtility pLib=new PropertyDataUtility();
-		ReadExcelDataUtility eLib=new ReadExcelDataUtility();
+		ExcelUtility eLib=new ExcelUtility();
 		WebDriverUtility wLib=new WebDriverUtility();
 		String expectedText = "Insert Successfully!!!";
 		

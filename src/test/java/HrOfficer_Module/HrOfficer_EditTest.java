@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.hrm.GenericUtility.JavaUtility;
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.WebDriverUtility;
 import com.hrm.ObjectPage.AddHrOfficerEmployee;
 import com.hrm.ObjectPage.EditHrOfficerEmployeePage;
@@ -23,7 +23,7 @@ public class HrOfficer_EditTest {
 	public static void main(String[] args) throws Throwable {
 
 		WebDriver driver=new ChromeDriver();
-        ReadExcelDataUtility rLib=new ReadExcelDataUtility();
+        ExcelUtility rLib=new ExcelUtility();
         WebDriverUtility wLib=new WebDriverUtility();
         JavaUtility jLib=new JavaUtility();
         HashMap<String, String> fields=new HashMap<String, String>();

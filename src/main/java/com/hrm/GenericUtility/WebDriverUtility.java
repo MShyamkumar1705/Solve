@@ -1,4 +1,4 @@
-package com.hrm.GenericUtility;
+									package com.hrm.GenericUtility;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -14,6 +14,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -255,5 +257,24 @@ public class WebDriverUtility {
 	public void scrollAction(WebDriver driver,WebElement element,int x,int y) {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(x,y)",element);
+	}
+	
+	public   WebDriver browser(WebDriver driver, String browserTag) {
+		//	f
+		if(browserTag.equalsIgnoreCase("Chrome"))
+
+		{
+		
+			driver =new ChromeDriver();
+		}
+		else if (browserTag.equalsIgnoreCase("FireFox"))
+		{
+
+			driver=new FirefoxDriver();
+		}
+		else {
+			System.out.println("No such driver");
+		}
+		return driver;
 	}
 }

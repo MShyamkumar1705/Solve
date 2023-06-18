@@ -15,7 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.WebDriverUtility;
 
 public class EditHrOfficerEmployeePage {
@@ -79,7 +79,7 @@ public class EditHrOfficerEmployeePage {
 	}
 
 	
-	public void editHrOfficer(WebDriverUtility wLib,WebDriver driver,ReadExcelDataUtility rLib) throws Throwable {
+	public void editHrOfficer(WebDriverUtility wLib,WebDriver driver,ExcelUtility rLib) throws Throwable {
 		searchBox.sendKeys("Shyam");
 		for(int i=0;i<button.size();i++) {
 			button.get(i).click();

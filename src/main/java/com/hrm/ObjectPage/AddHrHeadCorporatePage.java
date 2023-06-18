@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.WebDriverUtility;
 
 public class AddHrHeadCorporatePage {
@@ -35,7 +35,7 @@ public class AddHrHeadCorporatePage {
 		return saveCorp;
 	}
 
-	public void AddCorporate(WebDriverUtility wLib,WebDriver driver,ReadExcelDataUtility rLib) throws Throwable, Throwable {
+	public void AddCorporate(WebDriverUtility wLib,WebDriver driver,ExcelUtility rLib) throws Throwable, Throwable {
 		addCorporate.click();
 		copName.sendKeys(rLib.readExcelData("book", 1, 6));
 		saveCorp.click();

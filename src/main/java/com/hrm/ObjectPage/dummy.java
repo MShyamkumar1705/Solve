@@ -3,7 +3,7 @@ package com.hrm.ObjectPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.WebDriverUtility;
 
 public class dummy {
@@ -11,7 +11,7 @@ public class dummy {
 	public static void main(String[] args) throws Throwable {
        WebDriver driver=new ChromeDriver();
        WebDriverUtility wLib=new WebDriverUtility();
-		ReadExcelDataUtility rLib=new ReadExcelDataUtility();
+		ExcelUtility rLib=new ExcelUtility();
 		
 		driver.get("http://rmgtestingserver/domain/HRM_System/");
 		

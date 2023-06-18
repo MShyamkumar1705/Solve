@@ -10,14 +10,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.hrm.GenericUtility.JavaUtility;
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.iPathContent;
 
 public class Practice {
 
 	public static void main(String[] args) throws Throwable {
 //WebDriver driver=new ChromeDriver();
-		ReadExcelDataUtility eLib=new ReadExcelDataUtility();
+		ExcelUtility eLib=new ExcelUtility();
 		ArrayList<String> al=new ArrayList<String>();
 		al.add("employee_companyid");
 		al.add("employee_firstname");

@@ -16,4 +16,10 @@ public interface iPathContent {
 	String PASSWORD="Shyamkum@r05";
     String dataprovider="./src/test/resources/HRM.xlsx";
     String docs="./src/test/resources/Mshyamkumar.docx";
+    String DBURL="jdbc:mysql://rmgtestingserver:3333/projects";
+	String DBUSERNAME="root@%";
+	String DBPASSWORD="root"; 
+	String FilePath="./src/test/resources/Base.Properties";
+	String ExcelPath="src/test/resources/RMGtesting.xlsx";
+    
     }

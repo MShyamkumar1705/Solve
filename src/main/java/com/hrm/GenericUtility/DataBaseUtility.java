@@ -14,7 +14,7 @@ Connection con=null;
 	public void connectToDB() throws Throwable {
 		Driver driver=new Driver();
 		DriverManager.registerDriver(driver);
-		con=DriverManager.getConnection(iPathContent.URL,iPathContent.HEADUSER,iPathContent.HEADPASSWORD);;
+		con=DriverManager.getConnection(iPathContent.DBURL,iPathContent.DBUSERNAME,iPathContent.DBPASSWORD);
 		}
 	/**
 	 * 
@@ -43,5 +43,11 @@ public String executeQuerryANdgetData(String query,int columnIndex,String expDat
 		System.out.println("Project is not created");
 		return " ";	
 		}
+	
+	
+}
+public void closeDataBase() throws Throwable
+{
+	con.close();
 }
 }

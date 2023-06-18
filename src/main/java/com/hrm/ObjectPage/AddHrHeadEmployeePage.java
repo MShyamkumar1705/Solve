@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.hrm.GenericUtility.JavaUtility;
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.WebDriverUtility;
 
 public class AddHrHeadEmployeePage {
@@ -134,7 +134,7 @@ public class AddHrHeadEmployeePage {
 		return gss;
 	}
 
-	public void AddHrHeadEmployee(HashMap<String,String> fields,ReadExcelDataUtility rLib,JavaUtility jLib,WebDriver driver,WebDriverUtility wLib,String sheetName) throws InterruptedException, Throwable {
+	public void AddHrHeadEmployee(HashMap<String,String> fields,ExcelUtility rLib,JavaUtility jLib,WebDriver driver,WebDriverUtility wLib,String sheetName) throws InterruptedException, Throwable {
 //		companyId.sendKeys(rLib.readExcelData("book", 1, 0));
 //		firstName.sendKeys(rLib.readExcelData("book", 1, 1));
 //		lastName.sendKeys(rLib.readExcelData("book", 1, 2));

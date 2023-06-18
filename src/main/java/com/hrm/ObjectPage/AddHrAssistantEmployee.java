@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.WebDriverUtility;
 
 public class AddHrAssistantEmployee {
@@ -30,7 +30,7 @@ public class AddHrAssistantEmployee {
 	public WebElement getSaveEmployee() {
 		return saveEmployee;
 	}
-	public void AddHrAssistantEmployee(ReadExcelDataUtility rLib,WebDriver driver,WebDriverUtility wLib) throws Throwable {
+	public void AddHrAssistantEmployee(ExcelUtility rLib,WebDriver driver,WebDriverUtility wLib) throws Throwable {
 		addEmployee.click();
 		rLib.list(driver, "Sheet2");
 		File docx=new File("./src/test/resources/Mshyamkumar.docx");

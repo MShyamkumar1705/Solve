@@ -11,7 +11,7 @@ public class PropertyDataUtility {
 	 * @throws Throwable
 	 */
 	public String getPropertyKeyValue(String key) throws Throwable {
-		FileInputStream fis=new FileInputStream(iPathContent.PROPERTYPATH);
+		FileInputStream fis=new FileInputStream(iPathContent.FilePath);
 		Properties p=new Properties();
 		p.load(fis);
 		String data = p.getProperty(key);

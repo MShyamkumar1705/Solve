@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.hrm.GenericUtility.JavaUtility;
-import com.hrm.GenericUtility.ReadExcelDataUtility;
+import com.hrm.GenericUtility.ExcelUtility;
 import com.hrm.GenericUtility.WebDriverUtility;
 import com.hrm.ObjectPage.AddHrAssistantEmployee;
 import com.hrm.ObjectPage.HomePage;
@@ -18,7 +18,7 @@ public class HrAsisstant_AddTest {
 	public static void main(String[] args) throws Throwable {
 
 		WebDriver driver=new ChromeDriver();
-        ReadExcelDataUtility rLib=new ReadExcelDataUtility();
+        ExcelUtility rLib=new ExcelUtility();
         WebDriverUtility wLib=new WebDriverUtility();
         JavaUtility jLib=new JavaUtility();
         HashMap<String, String> fields=new HashMap<String, String>();

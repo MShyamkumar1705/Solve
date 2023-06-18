@@ -17,7 +17,7 @@ public class HRMOfficerBaseClass {
 	public WebDriver driver;
 	public WebDriverUtility wLib=new WebDriverUtility();
 	public JavaUtility jLib=new JavaUtility();
-	public ReadExcelDataUtility rLib=new ReadExcelDataUtility();
+	public ExcelUtility rLib=new ExcelUtility();
 	public PropertyDataUtility pLib=new PropertyDataUtility();
 	public DataBaseUtility dLib=new DataBaseUtility();
 	public FileUtility fLib=new FileUtility();
